@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Instagram app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+<!-- header -->
+    <header>
+      <div class="base-container header-nav">
+        <!-- logo-group -->
+        <div class="logo-group">
+          <div>
+            <i class="fab fa-2x fa-instagram"></i>
+          </div>
+          <div class="vertical-line"></div>
+          <div class="logo-group__title">Instagram</div>
+        </div>
+
+        <!-- only-desktop -->
+        <div class="only-desktop">
+          <button class="search" type="button" name="button">
+            <i class="fa fa-search search-icon"></i>
+            Search
+          </button>
+        </div>
+
+        <!-- social-icons -->
+        <div class="social-icons">
+          <span>
+            <i class="far fa-compass social-icons-m-size"></i>
+          </span>
+          <span>
+            <i id='sirdis' class="far fa-heart social-icons-m-size"></i>
+          </span>
+          <span>
+          <i class="far fa-user social-icons-m-size"></i>
+        </span>
+        </div>
+
+      </div>
+    </header>
+
+<!-- section -->
+    <section class="card-container">
+       <div class="card">
+          <div class="card__title">
+             <div class="outer-div">
+                <img src="img/canoe.jpg" alt="">
+             </div>
+             <div class="card__title--name">huffpost</div>
+           </div>
+          <div class="card__image"></div>
+          <div class="card-container--inner">
+             <div class="card__social">
+                <div>
+                  <span class="sirdis">
+                    <i class="far fa-heart social-icons-m-size like-heart"></i>
+                  </span>
+                  <label for="comment">
+                    <i class="far fa-comment social-icons-m-size"></i>
+                  </label>
+                </div>
+                <span>
+                  <i class="far fa-bookmark social-icons-m-size"></i>
+                </span>
+              </div>
+              <div class="card__likes bold">
+                 <span class="likes-count-1">1 like</span>
+                 <span class="likes-count">0 likes</span>
+                 <!-- <span>likes</span> -->
+              </div>
+              <div id='card__comments' class="card__comments"></div>
+              <div class="card__add-comment">
+                 <div class="card__add-comment__box">
+                    <input id="comment" class="comment-input" type="text" placeholder="Add a comment...">
+                    <span>
+                      <i class="fas fa-ellipsis-h social-icons-m-size"></i>
+                    </span>
+                  </div>
+                  <!-- <button class="btn" type="" name="button">submit</button> -->
+                </div>
+              </div>
+            </div>
+          </section>
+
+    <script type="text/javascript" src="javascript.js"></script>
+  </body>
+</html>
